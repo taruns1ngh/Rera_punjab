@@ -1,0 +1,58 @@
+<form class="container">
+    <h4 class="project">Search registered project</h4>
+<ul class="nav nav-tabs">
+  <li class="nav-item" *ngFor=" let tab of tabsArray; let sr = index" (click) = "setTab(sr)">
+    <a class="nav-link" [ngClass]="activatedTab == sr ? 'active': ' '">{{tab}}</a>
+  </li>
+</ul>
+<!-- <form class="row g-3">
+  <div class="col-md-6">
+    <div *ngIf="activatedTabIndex == 0">
+    <label class="form-label" >District</label>
+    <input type="text" class="form-control" placeholder="First name">
+  </div>
+  </div>
+  <div class="col-md-6">
+    <div *ngIf="activatedTabIndex == 1">
+    <label class="form-label" >Project Name</label>
+    <input type="text" class="form-control" placeholder="Optional">
+  </div>
+</div>
+  <div class="col-md-6">
+    <label class="form-label" >Promoter Name</label>
+    <input type="text" class="form-control" placeholder="Optional">
+  </div>
+  <div class="col-md-6">
+    <label class="form-label" >Registration Number</label>
+    <input type="text" class="form-control" placeholder="Optional">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>Punjab</option>
+      <option>Haryana</option>
+
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
+</form> -->
+</form> 
